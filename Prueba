@@ -1,1 +1,178 @@
+package es.studium.es;
+
+import java.util.Scanner;
+
+
+public class PreguntasYrespuestas {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		String pregunta0 = new String("¿Donald Trump desciende de árabes?");
+		String pregunta1 = new String("¿Los bancos regalan dinero?");
+		String pregunta2 = new String("¿Cuánto es dos mas dos?");
+		String pregunta3 = new String("¿El azúl es un color?");
+		String pregunta4 = new String("¿Hace calor en el desierto al medio dia?");
+		String pregunta5 = new String("¿El producto de 3 por 7 es 22?");
+		String pregunta6 = new String("¿Cuántos ojos tiene normalmente el ser humano?");
+		String pregunta7 = new String("¿De que color tiene la barba Papá Noel?");
+		String pregunta8 = new String("¿Cuántos hijos tienes si has sido padre dos veces?");
+		String pregunta9 = new String("¿Es negro el sumo Papa actual ?");
+		
+		
+		String a;
+		Integer contador = 0;
+		String acierto = "acierto";
+		String fallo = "fallo";
+		
+		System.out.println("Este programa reconoce solo respuestas en letras. Por favor responde sin números o el programa reconocerá la respuesta como una mala respuesta");
+		
+		for (int i = 0; i < 3; i++) 
+		{
+			String s = "";
+			int aleatorio = (int) Math.floor(Math.random() * 10);
+			
+			switch (aleatorio)
+			{
+			case 1:
+				System.out.println (pregunta0);
+				a = teclado.next();
+				if (((a.equals("No"))||(a.equals("no"))||(a.equals("NO"))))
+				{
+					s = acierto;
+				} 
+				else 
+				{
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 2:
+				System.out.println (pregunta1);
+				a = teclado.next();
+				if (((a.equals("No"))||(a.equals("no"))||(a.equals("NO"))))
+				{
+					s = acierto;
+				}
+				else
+				{
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 3:
+				System.out.println (pregunta2);
+				a = teclado.next();
+				if (((a.equals("Dos"))||(a.equals("dos"))||(a.equals("DOS"))))
+				{
+					s = acierto;
+				} 
+				else 
+				{
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 4:
+				System.out.println (pregunta3);
+				a = teclado.next();
+				if (((a.equals("Si"))||(a.equals("si"))||(a.equals("SI"))))
+				{
+					s = acierto;
+				} 
+				else 
+				{
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 5:
+				System.out.println (pregunta4);
+				a = teclado.next();
+				if (((a.equals("Si"))||(a.equals("si"))||(a.equals("SI")))){
+					s = acierto;
+				} else {
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 6:
+				System.out.println (pregunta5);
+				a = teclado.next();
+				if (((a.equals("No"))||(a.equals("no"))||(a.equals("NO"))))
+				{
+					s = acierto;
+				} 
+				else
+				{
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 7:
+				System.out.println (pregunta6);
+				a = teclado.next();
+				if (((a.equals("Dos"))||(a.equals("dos"))||(a.equals("DOS"))))
+				{
+					s = acierto;
+				} else {
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 8:
+				System.out.println (pregunta7);
+				a = teclado.next();
+				if (((a.equals("Blanco"))||(a.equals("blanco"))||(a.equals("BLANCO"))))
+				{
+					s = acierto;
+				} 
+				else
+				{
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 9:
+				System.out.println (pregunta8);
+				a = teclado.next();
+				if (((a.equals("Dos"))||(a.equals("dos"))||(a.equals("DOS")))){
+					s = acierto;
+					
+				}
+				else 
+				{
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+			case 10:
+				System.out.println (pregunta9);
+				a = teclado.next();
+				if (((a.equals("No"))||(a.equals("no"))||(a.equals("NO"))))
+				{
+					s = acierto;
+				} 
+				else 
+				{
+					s = fallo;
+				}
+				System.out.println(s);
+				break;
+				
+			}
+			if (s.equals(acierto)) 
+			{
+				contador++;
+			}		
+		}
+		System.out.println("Has acertado " + contador + " de las tres preguntas");
+		System.out.println("Esperamos haya disfrutado del programa Preguntas");
+		teclado.close();
+	}
+			
+}		
+			
+
 
